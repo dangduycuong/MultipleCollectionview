@@ -11,4 +11,5 @@ import UIKit
 class PlacesCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var placesImageView: UIImageView!
+    @IBOutlet weak var indexLabel: UILabel!
 }

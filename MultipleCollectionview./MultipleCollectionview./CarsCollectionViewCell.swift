@@ -10,4 +10,5 @@ import UIKit
 
 class CarsCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var carsImageView: UIImageView!
+    @IBOutlet weak var indexLabel: UILabel!
 }

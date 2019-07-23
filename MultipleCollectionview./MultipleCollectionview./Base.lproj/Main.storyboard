@@ -41,18 +41,24 @@
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aq5-E5-mrQ">
-                                                    <rect key="frame" x="4" y="4" width="110" height="119"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aq5-E5-mrQ">
+                                                    <rect key="frame" x="4" y="4" width="92" height="92"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4e-ip-6wQ">
+                                                    <rect key="frame" x="29" y="77" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.20637169219425033" blue="0.24045531842598533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="aq5-E5-mrQ" firstAttribute="leading" secondItem="YMO-Vn-yow" secondAttribute="leading" constant="4" id="0uE-At-4P3"/>
-                                            <constraint firstItem="aq5-E5-mrQ" firstAttribute="top" secondItem="YMO-Vn-yow" secondAttribute="top" constant="4" id="J99-wN-eWW"/>
-                                            <constraint firstAttribute="bottom" secondItem="aq5-E5-mrQ" secondAttribute="bottom" constant="4" id="QhS-mk-Rt1"/>
-                                            <constraint firstAttribute="trailing" secondItem="aq5-E5-mrQ" secondAttribute="trailing" constant="4" id="TPw-uz-XIZ"/>
+                                            <constraint firstItem="Y4e-ip-6wQ" firstAttribute="centerX" secondItem="YMO-Vn-yow" secondAttribute="centerX" id="6jA-IA-MYb"/>
+                                            <constraint firstAttribute="bottom" secondItem="Y4e-ip-6wQ" secondAttribute="bottom" constant="2" id="HBj-Bq-2ZH"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="indexLabel" destination="Y4e-ip-6wQ" id="4Mz-xX-mMK"/>
                                             <outlet property="placesImageView" destination="aq5-E5-mrQ" id="sAO-ly-wor"/>
                                         </connections>
                                     </collectionViewCell>
@@ -63,32 +69,41 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.42444604037841116" green="1" blue="0.97875079705465062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="H0j-Av-yRL">
-                                    <size key="itemSize" width="140" height="119"/>
+                                    <size key="itemSize" width="120" height="120"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="carsCell" id="Va4-Zh-n5M" customClass="CarsCollectionViewCell" customModule="MultipleCollectionview_" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="4.5" width="140" height="119"/>
+                                        <rect key="frame" x="0.0" y="4" width="120" height="120"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="140" height="119"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wa5-3H-X7k">
                                                     <rect key="frame" x="4" y="4" width="132" height="111"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bj6-qu-Y5x">
+                                                    <rect key="frame" x="49" y="94" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </view>
                                         <constraints>
                                             <constraint firstItem="wa5-3H-X7k" firstAttribute="leading" secondItem="Va4-Zh-n5M" secondAttribute="leading" constant="4" id="08p-9g-kCn"/>
+                                            <constraint firstAttribute="bottom" secondItem="Bj6-qu-Y5x" secondAttribute="bottom" constant="4" id="KbU-ck-OMN"/>
+                                            <constraint firstItem="Bj6-qu-Y5x" firstAttribute="centerX" secondItem="Va4-Zh-n5M" secondAttribute="centerX" id="T4y-HR-Lef"/>
                                             <constraint firstAttribute="trailing" secondItem="wa5-3H-X7k" secondAttribute="trailing" constant="4" id="UvF-O9-CYF"/>
                                             <constraint firstAttribute="bottom" secondItem="wa5-3H-X7k" secondAttribute="bottom" constant="4" id="ohg-CI-VUS"/>
                                             <constraint firstItem="wa5-3H-X7k" firstAttribute="top" secondItem="Va4-Zh-n5M" secondAttribute="top" constant="4" id="uMX-XD-Scu"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="carsImageView" destination="wa5-3H-X7k" id="o8U-Rg-AmM"/>
+                                            <outlet property="indexLabel" destination="Bj6-qu-Y5x" id="W4w-Br-qST"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
